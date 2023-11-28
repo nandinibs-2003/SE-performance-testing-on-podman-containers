@@ -1,0 +1,16 @@
+Other Commands :
+
+Container Creation :
+ podman run --name hello-world-containerr hello-world
+
+Concurrency test :
+ab -n 100 -c 10 http://localhost:80/
+
+Stress (load) test :
+ab -n 10000 -c 1000 -k http://127.0.0.1:8080/
+
+Overload :
+ab -n 100000 -c 10000 -k http://127.0.0.1:8080/
+
+Memory and CPU Usage :
+podman stats CONTAINER_ID_OR_NAME
